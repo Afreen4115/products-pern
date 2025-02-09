@@ -13,7 +13,7 @@ const HomePage = () => {
   const { products, loading, error, fetchProducts } = useProductStore();
 
   useEffect(() => {
-    if(products.length){
+    if(products.length>0){
       fetchProducts();
     }
     
