@@ -36,7 +36,7 @@ const NavBar = () => {
                                 <div className="p-2 rounded-full hover:bg-base-200 transition-colors">
                                     <ShoppingBagIcon className="size-5" />
                                     <span className="badge badge-sm badge-primary indicator-item">
-                                        8
+                                        {products?.length || 0}
                                     </span>
                                 </div>
                             </div>

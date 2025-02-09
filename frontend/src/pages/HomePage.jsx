@@ -13,7 +13,10 @@ const HomePage = () => {
   const { products, loading, error, fetchProducts } = useProductStore();
 
   useEffect(() => {
-    fetchProducts();
+    if(products.length){
+      fetchProducts();
+    }
+    
   }, [fetchProducts]);
 
   console.log("products", products);
